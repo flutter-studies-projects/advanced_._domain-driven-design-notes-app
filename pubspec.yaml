@@ -1,0 +1,29 @@
+name: flutter_firebase_ddd_resocoder
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dartz: ^0.10.0-nullsafety.1
+  firebase_auth: ^1.0.3
+  firebase_core: ^1.0.3
+  flutter_bloc: ^7.0.0
+  freezed_annotation: ^0.14.1
+  get_it: ^6.1.1
+  google_sign_in: ^5.0.1
+  injectable: ^1.2.2
+
+dev_dependencies:
+  build_runner: null
+  freezed: ^0.14.1+2
+  injectable_generator: ^1.2.2
+  lint: ^1.5.3
+
+flutter:
+
+  uses-material-design: true
