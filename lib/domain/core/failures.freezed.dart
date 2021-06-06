@@ -64,14 +64,14 @@ mixin _$ValueFailure<T> {
       throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $ValueFailureCopyWith<T, ValueFailure<T>> get copyWith =>
+  $ValueFailureCopyWith<T, AuthValueFailure<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ValueFailureCopyWith<T, $Res> {
   factory $ValueFailureCopyWith(
-          ValueFailure<T> value, $Res Function(ValueFailure<T>) then) =
+          AuthValueFailure<T> value, $Res Function(AuthValueFailure<T>) then) =
       _$ValueFailureCopyWithImpl<T, $Res>;
   $Res call({String failedValue});
 }
@@ -81,9 +81,9 @@ class _$ValueFailureCopyWithImpl<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   _$ValueFailureCopyWithImpl(this._value, this._then);
 
-  final ValueFailure<T> _value;
+  final AuthValueFailure<T> _value;
   // ignore: unused_field
-  final $Res Function(ValueFailure<T>) _then;
+  final $Res Function(AuthValueFailure<T>) _then;
 
   @override
   $Res call({
@@ -133,6 +133,7 @@ class _$InvalidEmailCopyWithImpl<T, $Res>
 }
 
 /// @nodoc
+
 class _$InvalidEmail<T> implements InvalidEmail<T> {
   const _$InvalidEmail({required this.failedValue});
 
@@ -207,7 +208,7 @@ class _$InvalidEmail<T> implements InvalidEmail<T> {
   }
 }
 
-abstract class InvalidEmail<T> implements ValueFailure<T> {
+abstract class InvalidEmail<T> implements AuthValueFailure<T> {
   const factory InvalidEmail({required String failedValue}) = _$InvalidEmail<T>;
 
   @override
@@ -253,6 +254,7 @@ class _$ShortPasswordCopyWithImpl<T, $Res>
 }
 
 /// @nodoc
+
 class _$ShortPassword<T> implements ShortPassword<T> {
   const _$ShortPassword({required this.failedValue});
 
@@ -327,7 +329,7 @@ class _$ShortPassword<T> implements ShortPassword<T> {
   }
 }
 
-abstract class ShortPassword<T> implements ValueFailure<T> {
+abstract class ShortPassword<T> implements AuthValueFailure<T> {
   const factory ShortPassword({required String failedValue}) =
       _$ShortPassword<T>;
 
