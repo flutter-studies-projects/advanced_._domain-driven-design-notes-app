@@ -7,3 +7,6 @@ analyzer:
     must_be_immutable: error
     prefer_const_constructors_in_immutables: error
     prefer_const_constructors: error
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"

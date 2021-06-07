@@ -8,7 +8,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 @immutable
 abstract class ValueObject<T> {
   const ValueObject();
-  Either<AuthValueFailure<T>, T> get value;
+  Either<ValueFailure<T>, T> get value;
 
   /// Throws [UnexpectedValueError] containing the [AuthValueFailure]
   T getOrCrash() {
@@ -34,7 +34,7 @@ abstract class ValueObject<T> {
 
 class UniqueId extends ValueObject<String> {
   @override
-  final Either<AuthValueFailure<String>, String> value;
+  final Either<ValueFailure<String>, String> value;
 
   factory UniqueId() {
     return UniqueId._(

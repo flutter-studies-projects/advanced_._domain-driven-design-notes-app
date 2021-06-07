@@ -1,7 +1,7 @@
 import 'package:flutter_firebase_ddd_resocoder/domain/core/failures.dart';
 
 class UnexpectedValueError extends Error {
-  final AuthValueFailure valueFailure;
+  final ValueFailure valueFailure;
 
   UnexpectedValueError(this.valueFailure);
 
